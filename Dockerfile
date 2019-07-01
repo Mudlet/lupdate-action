@@ -1,4 +1,4 @@
-FROM vookimedlo/ubuntu-qt:katestDistroOfficial_gcc_cosmic
+FROM vookimedlo/ubuntu-qt:latestDistroOfficial_gcc_cosmic
 
 LABEL "maintainer"="Florian Scheel <keneanung@googlemail.com>"
 LABEL "repository"="http://github.com/Mudlet/lupdate-action"
