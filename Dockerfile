@@ -12,4 +12,5 @@ LABEL "com.github.actions.color"="green"
 RUN apt-get update -qq && apt-get install -y qt512tools
 
 ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
