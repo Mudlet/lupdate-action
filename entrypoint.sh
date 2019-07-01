@@ -3,4 +3,4 @@
 set -e
 
 # "args" from main.workflow get append to below call
-sh -c "lupdate $*"
+sh -c "source /etc/profile && lupdate $*"
