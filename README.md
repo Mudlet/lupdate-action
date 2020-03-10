@@ -26,10 +26,8 @@ All arguments get appended to the [`lupdate` command](https://doc.qt.io/qt-5/lin
 This is the action block used to render the website for this action.
 
 ```
-action "Update translations" {
-  uses = "Mudlet/lupdate-action"
-  args = [
-    "src/mudlet.pro"
-  ]
-}
+  - name: run lupdate
+    uses: Mudlet/lupdate-action@master
+    with:
+      args: -recursive ./src/ ./3rdparty/dblsqd/dblsqd ./3rdparty/edbee-lib/edbee-lib -ts ./translations/mudlet.ts
 ```
